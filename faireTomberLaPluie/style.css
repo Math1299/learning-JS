@@ -1,0 +1,45 @@
+/*# sourceMappingURL=style.css.map */
+
+*,
+::after,
+::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    color: #eee;
+    text-align: center;
+}
+.bg-img {
+    background-image: url(./media/basic-pics/rainbow-1467988_1920.jpg);
+    object-fit: cover;
+    height: 100vh;
+    width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    filter: blur(2px) contrast(80%);
+}
+h1 {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: rgba(0, 0, 0, 0.25);
+    padding: 40px;
+    border-radius: 20px;
+}
+.fa-tint {
+    color: rgb(160, 160, 160);
+    position: absolute;
+    top: -20px;
+    animation: fall linear forwards;
+}
+@keyframes fall {
+    to {
+        transform: translateY(105vh);
+    }
+}

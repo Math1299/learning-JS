@@ -1,0 +1,22 @@
+/*# sourceMappingURL=style.css.map */
+@import url("https://fonts.googleapis.com/css2?family=Orbitron&display=swap");
+
+*,
+::after,
+::before {
+    font-family: "Orbitron", sans-serif;
+}
+
+h3 {
+    font-size: 2rem;
+}
+.container {
+    width: 160px;
+}
+
+.form-group {
+    display: flex;
+}
+#countDown {
+    font-size: 13rem;
+}
