@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+        <title>Générateur de MDP JS</title>
+
+        <!-- <link href="./assets/bootstrap.css" rel="stylesheet"> -->
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" />
+        <link href="./style.css" rel="stylesheet" />
+    </head>
+
+    <body>
+        <div id="password-generator">
+            <form>
+                <input value="Générateur de MDP" id="password-output" />
+                <div class="range">
+                    <input
+                        type="range"
+                        min="4"
+                        max="24"
+                        step="1"
+                        value="0"
+                        id="password-length"
+                        oninput="document.querySelector('#display-password-length').value = this.value"
+                    />
+                    <input
+                        type="text"
+                        maxlength="2"
+                        value="8"
+                        id="display-password-length"
+                        oninput="document.querySelector('#password-length').value = this.value"
+                    />
+                </div>
+                <div class="flex">
+                    <input type="checkbox" id="lowerCase" />
+                    <label for="lowerCase">a - z</label>
+
+                    <input type="checkbox" id="upperCase" />
+                    <label for="upperCase">A - Z</label>
+
+                    <input type="checkbox" id="numbers" />
+                    <label for="numbers">0 - 9 </label>
+
+                    <input type="checkbox" id="symbols" />
+                    <label for="symbols">!-?</label>
+                </div>
+
+                <button id="generateButton" type="button" onclick="generatePassword()">Générer le mot de passe</button>
+            </form>
+        </div>
+
+        <script src="./assets/jquery.min.js" type="text/javascript"></script>
+        <script src="./assets/bootstrap.js" type="text/javascript"></script>
+        <script src="app.js" type="text/javascript"></script>
+    </body>
+</html>

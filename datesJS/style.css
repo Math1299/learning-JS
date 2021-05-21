@@ -1,0 +1,80 @@
+@import url("https://fonts.googleapis.com/css2?family=Abel&display=swap");
+
+*,
+::after,
+::before {
+    font-family: "Abel", sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url(bgLac.jpg);
+    background-position: center;
+    background-size: cover;
+}
+.card {
+    width: 25%;
+    height: 70%;
+    background: rgba(248, 245, 245, 0.9);
+    border-radius: 25px;
+    padding: 40px;
+    /* display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; */
+}
+h2 {
+    text-align: center;
+    color: blueviolet;
+    font-size: 2rem;
+}
+.card > div {
+    text-align: center;
+    margin: 20px;
+    font-size: 1.5rem;
+}
+form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+form input {
+    padding: 10px;
+    margin: 30px 0;
+    outline: none;
+    border: 1px solid rgb(155, 61, 150);
+    border-radius: 5px;
+    text-align: center;
+    color: blue;
+    font-size: 1.2rem;
+}
+button {
+    padding: 15px;
+    outline: none;
+    border: none;
+    background: #3e51bd;
+    border-radius: 20px;
+    color: #f1f1f1;
+    font-size: 1.8rem;
+    cursor: pointer;
+    margin: 40px 0;
+}
+button:hover {
+    border: 1px solid #3e51bd;
+    color: #3e51bd;
+    background: transparent;
+    transition: 0.2s ease-in-out;
+}
+label {
+    color: rgb(155, 61, 150);
+    font-size: 1.5rem;
+    font-weight: bolder;
+}

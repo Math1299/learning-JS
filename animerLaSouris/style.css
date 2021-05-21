@@ -1,0 +1,75 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
+*,
+::after,
+::before {
+    font-family: "Poppins", sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style-type: none;
+}
+body {
+    height: 100vh;
+    width: 100%;
+    cursor: none;
+}
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    min-height: 10vh;
+    margin: auto;
+}
+ul {
+    display: flex;
+    justify-content: space-between;
+}
+li {
+    padding: 1rem;
+}
+.nav-links,
+h2 {
+    flex: 1;
+}
+.pic {
+    height: 70vh;
+    background: url(bgBike.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    filter: sepia(70%);
+    transition: 2s ease-in-out;
+}
+.pic:hover {
+    filter: none;
+}
+p {
+    padding: 50px 100px;
+}
+.cursor {
+    width: 3rem;
+    height: 3rem;
+    border: 2px solid #333;
+    border-radius: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%); /* on positionne le centre de notre cursor dans l'angle supérieur gauche */
+    pointer-events: none;
+    z-index: 2;
+    backdrop-filter: grayscale(200%); /* interagir sur le fond de notre form ===> on intervertie les couleurs à l'intérieur de notre cercle */
+    transition: all 0.5s ease;
+    transition-property: background, transform;
+}
+
+.link-grow {
+    transform: scale(1.5) translate(-25%, -25%); /* le translate recadre le cursor après le growth*/
+    background: #222;
+    opacity: 0.9;
+    z-index: 2;
+}
+.hovered-link {
+    color: #f1f1f1;
+    transition: 0.3s ease;
+    z-index: 3;
+}
